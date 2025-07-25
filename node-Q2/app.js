@@ -5,7 +5,8 @@ const app = express();
 const PORT = 3000;
 
 // Serve static files from 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
+
 
 app.listen(PORT, () => {
     console.log(`Static resource server running at http://localhost:${PORT}`);
